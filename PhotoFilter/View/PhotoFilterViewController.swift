@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotoFilterViewController.swift
 //  PhotoFilter
 //
 //  Created by Abdallah Shaheen on 6/3/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotoFilterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

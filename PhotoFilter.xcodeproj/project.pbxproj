@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C8BA291120C3ED5F00FB8E89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA291020C3ED5F00FB8E89 /* AppDelegate.swift */; };
-		C8BA291320C3ED5F00FB8E89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA291220C3ED5F00FB8E89 /* ViewController.swift */; };
+		C8BA291320C3ED5F00FB8E89 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA291220C3ED5F00FB8E89 /* PhotoFilterViewController.swift */; };
 		C8BA291620C3ED5F00FB8E89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BA291420C3ED5F00FB8E89 /* Main.storyboard */; };
 		C8BA291820C3ED6100FB8E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BA291720C3ED6100FB8E89 /* Assets.xcassets */; };
 		C8BA291B20C3ED6100FB8E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BA291920C3ED6100FB8E89 /* LaunchScreen.storyboard */; };
 		C8BA292620C3ED6100FB8E89 /* PhotoFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA292520C3ED6100FB8E89 /* PhotoFilterTests.swift */; };
 		C8BA293120C3ED6100FB8E89 /* PhotoFilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA293020C3ED6100FB8E89 /* PhotoFilterUITests.swift */; };
+		C8BA294220C41E0100FB8E89 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA294120C41E0100FB8E89 /* Photo.swift */; };
+		C8BA294420C4203000FB8E89 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA294320C4203000FB8E89 /* Service.swift */; };
+		C8BA294620C4213500FB8E89 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BA294520C4213500FB8E89 /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		C8BA290D20C3ED5F00FB8E89 /* PhotoFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BA291020C3ED5F00FB8E89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8BA291220C3ED5F00FB8E89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8BA291220C3ED5F00FB8E89 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 		C8BA291520C3ED5F00FB8E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8BA291720C3ED6100FB8E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BA291A20C3ED6100FB8E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		C8BA292C20C3ED6100FB8E89 /* PhotoFilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BA293020C3ED6100FB8E89 /* PhotoFilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterUITests.swift; sourceTree = "<group>"; };
 		C8BA293220C3ED6100FB8E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8BA294120C41E0100FB8E89 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C8BA294320C4203000FB8E89 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C8BA294520C4213500FB8E89 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,13 @@
 		C8BA290F20C3ED5F00FB8E89 /* PhotoFilter */ = {
 			isa = PBXGroup;
 			children = (
+				C8BA293E20C4077000FB8E89 /* Model */,
+				C8BA293F20C4077A00FB8E89 /* View */,
+				C8BA294020C4079C00FB8E89 /* Service */,
+				C8BA291C20C3ED6100FB8E89 /* Info.plist */,
 				C8BA291020C3ED5F00FB8E89 /* AppDelegate.swift */,
-				C8BA291220C3ED5F00FB8E89 /* ViewController.swift */,
-				C8BA291420C3ED5F00FB8E89 /* Main.storyboard */,
 				C8BA291720C3ED6100FB8E89 /* Assets.xcassets */,
 				C8BA291920C3ED6100FB8E89 /* LaunchScreen.storyboard */,
-				C8BA291C20C3ED6100FB8E89 /* Info.plist */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -123,6 +130,32 @@
 				C8BA293220C3ED6100FB8E89 /* Info.plist */,
 			);
 			path = PhotoFilterUITests;
+			sourceTree = "<group>";
+		};
+		C8BA293E20C4077000FB8E89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8BA294120C41E0100FB8E89 /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8BA293F20C4077A00FB8E89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8BA291220C3ED5F00FB8E89 /* PhotoFilterViewController.swift */,
+				C8BA294520C4213500FB8E89 /* PhotoCell.swift */,
+				C8BA291420C3ED5F00FB8E89 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8BA294020C4079C00FB8E89 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C8BA294320C4203000FB8E89 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BA291320C3ED5F00FB8E89 /* ViewController.swift in Sources */,
+				C8BA294220C41E0100FB8E89 /* Photo.swift in Sources */,
+				C8BA294620C4213500FB8E89 /* PhotoCell.swift in Sources */,
+				C8BA294420C4203000FB8E89 /* Service.swift in Sources */,
+				C8BA291320C3ED5F00FB8E89 /* PhotoFilterViewController.swift in Sources */,
 				C8BA291120C3ED5F00FB8E89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62672XKV3W;
+				DEVELOPMENT_TEAM = 664CRGVR64;
 				INFOPLIST_FILE = PhotoFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62672XKV3W;
+				DEVELOPMENT_TEAM = 664CRGVR64;
 				INFOPLIST_FILE = PhotoFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
