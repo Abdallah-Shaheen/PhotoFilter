@@ -14,4 +14,13 @@ struct Photo: Codable {
     var title: String
     var url: String
     var thumbnailUrl: String
+    var isSelected: Bool = false
+
+    enum CodingKeys: String, CodingKey {
+        case albumId
+        case id
+        case title
+        case url
+        case thumbnailUrl
+    }
 }
