@@ -18,6 +18,7 @@ class PhotoFilterViewController: UIViewController, UITableViewDelegate, UITableV
     
     var photosUrl = "https://jsonplaceholder.typicode.com/photos"
     var photosArray: [Photo] = []
+    
     var selectedPhotosArray: [Photo] = []
     
     override func viewDidLoad() {
